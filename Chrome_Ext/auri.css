@@ -1,0 +1,160 @@
+#container {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    width: 360px;
+    height: 500px;
+    background-color: #DDE6F8;
+    border: 2px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.chatbox{
+    width: 317px;
+    height: 380px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#messages{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: auto;
+    padding-bottom: 8px;
+}
+
+#messages div{
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    gap: 6px;
+    border-radius: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+#messages div.user{
+    flex-direction: row-reverse; /*avatar on the right for the user */
+    align-self: flex-end;
+}
+
+#messages div.user .bubble{
+    background-color: #F6E7FF; /* user messages */
+    border-radius: 12px;
+    padding: 6px 10px;
+}
+
+#messages div.bot{
+    flex-direction: row; /*avatar on the left for the bot */
+    align-self: flex-start;
+}
+
+#messages div.bot .bubble{
+    background-color: #CFD8E9; /* bot messages */
+    border-radius: 12px;
+    padding: 6px 10px;
+}
+
+.message-avatar{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bubble {
+    white-space: pre-wrap;
+}
+
+#input-area{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+#userInput{
+    width: 240px;
+    height: 32px;
+    background-color: #E7E5FF;
+    border-radius: 15px;
+    border: none;
+    padding: 0 32px 0 8px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 28px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#userInput:focus{
+    outline: none;
+    background-color: #E7E5FF;
+    border: 1px solid #BA974A;
+}
+
+#sendBtn{
+    width: 20px;
+    height: 20px;
+    background-color: #E7E5FF;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sendBtn{
+    background-image: url('assets/send.png');
+}
+
+#sendBtn:hover{
+     transform: translateY(-50%) scale(1.1);
+}
+
+#micBtn,
+#uploadBtn{
+    width: 28px;
+    height: 28px;
+    background-color: whitesmoke;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#micBtn{
+    background-image: url('assets/mic.png');
+}
+
+#uploadBtn{
+    background-image: url('assets/upload.png');
+}
+
+#micBtn:hover,
+#uploadBtn:hover{
+    transform: scale(1.1);
+}

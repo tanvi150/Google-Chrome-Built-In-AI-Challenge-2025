@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "OnStyle",
+  "version": "1.0.0",
+  "description": "Your AI Personal Stylist",
+  "icons": {
+    "16": "assets/OnStyle_Logo_16.png",
+    "32": "assets/OnStyle_Logo_32.png",
+    "48": "assets/OnStyle_Logo_48.png",
+    "128": "assets/OnStyle_Logo_128.png",
+    "512": "assets/OnStyle_Logo.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "interface.html",
+    "default_icon": {
+      "16": "assets/OnStyle_Logo_16.png",
+      "32": "assets/OnStyle_Logo_32.png",
+      "48": "assets/OnStyle_Logo_48.png",
+      "128": "assets/OnStyle_Logo_128.png",
+      "512": "assets/OnStyle_Logo.png"
+    }
+  }
+}

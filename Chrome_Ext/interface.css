@@ -1,0 +1,109 @@
+/* Container for UI */
+#container {
+    width: 360px;
+    height: 500px;
+    background-color: #DDE6F8;
+    border: 2px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Header */
+#header-container {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Form Container */
+#form {
+    flex: 1;
+}
+
+/* Form Styling */
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+/* Labels */
+label {
+    font-weight: 400;
+}
+
+/* Input Fields */
+input[type="number"],
+select {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid #1F0847;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #BA974A;
+}
+
+/*Helper text for body types */
+.helper-text.clickable{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #061F8F;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 0.70rem;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-left: 210px;
+}
+
+#bodyTypeImage{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ccc;
+    background: #fff;
+    padding: 4px;
+    z-index: 10;
+    max-width: 320px;
+}
+
+#bodyTypeImage img{
+    width: 100%;
+    height: auto;
+}
+
+/* Button */
+button {
+    margin-top: 5px;
+    margin-left: 100px;
+    padding: 8px 12px;
+    background-color: #EB603C;
+    border: solid;
+    border-color: #EA3E3A;
+    border-radius: 8px;
+    font-weight: 550;
+    cursor: pointer;
+    color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.error-msg{
+    color: red;
+    font-size: 0.75rem;
+    display: block;
+    margin-bottom: 4px;
+}

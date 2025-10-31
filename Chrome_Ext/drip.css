@@ -1,0 +1,70 @@
+#container {
+    width: 360px;
+    height: 500px;
+    background-color: #DDE6F8;
+    border: 2px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card{
+    width: 270px;
+    height: 140px;
+    background-color: #FFD4C8;
+    border: solid;
+    border-color: #E0AAA8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 50px;
+}
+
+.card:hover{
+    background-color: #FAE8E3 ;
+}
+
+#upload-container h1{
+    margin-top: 30px;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #880002;
+    font-weight: 500;
+}
+
+#upload-container h5{
+    margin-top: -10px;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #3E3E3E;
+    font-weight: 400;
+}
+
+#stylist-container h1{
+    margin-top: 30px;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #880002;
+    font-weight: 500;
+}
+
+#stylist-container h5{
+    margin-top: -10px;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #3E3E3E;
+    font-weight: 400;
+}

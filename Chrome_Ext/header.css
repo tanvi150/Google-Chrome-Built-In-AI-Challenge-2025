@@ -1,0 +1,79 @@
+/* Header Container */
+.onstyle-header {
+    display: flex;
+    align-items: flex-start;   /* align items to top */
+    justify-content: flex-start; /* align items to left */
+    width: 100%;       
+    max-width: 360px;  
+    padding: 4px 8px;   /* small padding to contain elements */
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 0; /* optional: shift header slightly up if needed */
+}
+
+/* Logo Styling */
+.logo {
+    height: 100px;         /* reduce height a bit for visual balance */
+    width: auto;
+    flex-shrink: 0;  
+    margin-left: -40px;
+    margin-top: -20px;        /* move logo closer to top */
+}
+
+/* Banner Wrapper */
+.banner-wrapper {
+    flex: 1;            
+    position: relative;
+    margin-left: 0;     /* small spacing from logo */
+    margin-top: 15px;        /* move banner closer to top */
+}
+
+/* Gradient Banner beside the logo */
+.banner {
+    width: 100%;        
+    padding: 6px 10px;   /* slightly smaller padding to move up visually */
+    background: linear-gradient(
+        90deg,
+        rgba(255, 119, 0, 0.5),
+        rgba(255, 249, 76, 0.5)
+    );
+    font-weight: 600;
+    font-family: 'Kalam', sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Corner icons */
+.corner-icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+}
+
+.corner-icon.top-left {
+    top: -6px;
+    left: -6px;
+}
+
+.corner-icon.bottom-right {
+    bottom: -6px;
+    right: -25px;
+}
+
+/* Responsive tweaks */
+@media(max-width: 360px) {
+    .logo {
+        height: 50px;
+    }
+
+    .banner {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    .corner-icon {
+        width: 20px;
+        height: 20px;
+    }
+}

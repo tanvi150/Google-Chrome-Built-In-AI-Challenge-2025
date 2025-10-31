@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnStyle - Your Personal AI Stylist</title>
+    <link rel="stylesheet" href="interface.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="header.js"></script>
+    <script src="interface.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header-container"></div>
+        <div id="form">
+            <form>
+                <label for="h">Height:</label><br>
+                <input type="number" id="h" name="h" min="0" step="1"><br>
+                <span class="error-msg" id="h-error"></span>
+
+                <label for="w">Weight:</label><br>
+                <input type="number" id="w" name="w" min="0" step="1"><br>
+                <span class="error-msg" id="w-error"></span>
+
+                <label for="g">Gender:</label><br>
+                <select id="g" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select> <br>
+
+                <label for="bT">Body Type:</label><br>
+                <select id="bT" name="body-type">
+                    <!--options populated dynamically-->
+                </select> <br>
+                <span id="body-type-hint" class="helper-text clickable">
+                    Not sure? Let's find out!
+                </span><br>
+            </form>
+
+            <!-- Hidden image inside the form -->
+            <div id="bodyTypeImage" class="popup-image">
+                <img src="assets/body-types.png" alt="Body Types">
+            </div>
+
+            <button type="button" id="findStyleBtn">Find my style</button>
+        </div>
+    </div>
+</body>
+
+</html>
