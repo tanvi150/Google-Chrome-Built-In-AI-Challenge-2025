@@ -6,7 +6,7 @@ Whether you’re dressing for brunch, work, or a night out, Auri curates suggest
 # Inspiration
 
 Finding outfits that actually suit your body type can be confusing and time-consuming.
-I wanted to make fashion accessible, intelligent, and personal — by blending AI + design intuition into one sleek experience.
+I wanted to make fashion accessible, intelligent, and personal - by blending AI + design intuition into one sleek experience.
 
 # Features
 
@@ -50,15 +50,9 @@ To enable Gemini Nano and the Prompt API on your device:
 Since OnStyle is currently in development mode, it is not hosted live.
 You can unpack and run it locally by following these steps:
 
-1. Download or clone this repository:
+1. Download or clone this repository
 
-git clone https://github.com/yourusername/onstyle.git
-
-
-2. Open Google Chrome and go to:
-
-chrome://extensions/
-
+2. Open Google Chrome and go to: **chrome://extensions/**
 
 3. Turn on Developer Mode (top right corner).
 
