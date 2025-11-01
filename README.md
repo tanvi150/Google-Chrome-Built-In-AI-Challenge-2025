@@ -1,12 +1,12 @@
 # Overview
 
-OnStyle is a Chrome extension that helps you discover your body type, analyze your outfits, and get personalized style recommendations - all with the help of your AI stylist, Auri 
+OnStyle is a Chrome extension that helps you discover your body type, analyze your outfits, and get personalized style recommendations — all with the help of your AI stylist, Auri 
 Whether you’re dressing for brunch, work, or a night out, Auri curates suggestions that flatter your silhouette and express your style effortlessly.
 
 # Inspiration
 
 Finding outfits that actually suit your body type can be confusing and time-consuming.
-I wanted to make fashion accessible, intelligent, and personal - by blending AI + design intuition into one sleek experience.
+I wanted to make fashion accessible, intelligent, and personal — by blending AI + design intuition into one sleek experience.
 
 # Features
 
@@ -71,7 +71,6 @@ Click it to launch Auri — your AI stylist.
 # 👩‍💻 Developer
 
 Solo Developer: Tanvi
-
 #### Concept · Design · Frontend · AI Integration
 
 Check out the full project submission on Devpost:
